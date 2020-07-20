@@ -6,3 +6,5 @@
 1) Developing a Machine Learning pipeline using PyCaret.
 2) Building Web App using Streamlit.
 3) Deploying the Web App on Heroku.
+<br>
+<b>Installation:</b>
