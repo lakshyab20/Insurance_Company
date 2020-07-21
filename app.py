@@ -1,9 +1,9 @@
 from pycaret.regression import load_model, predict_model
 import streamlit as st
 import pandas as pd 
-import numpys as np 
+import numpy as np 
 
-model=load_model('insurance_app.pkl')
+model=load_model('insurance_app')
 
 def predict(model, input_df):
     predictions_df=predict_model(estimator=model,data=input_df)
@@ -17,8 +17,7 @@ def run():
     
     st.title("Patient Hospital Charges Prediction App")
     
-     if add_selectbox == 'Online':
-
+    if add_selectbox == 'Online':
         age = st.number_input('Age', min_value=1, max_value=100, value=25)
         sex = st.selectbox('Sex', ['male', 'female'])
         bmi = st.number_input('BMI', min_value=10, max_value=50, value=10)
