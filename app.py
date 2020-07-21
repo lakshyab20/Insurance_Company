@@ -9,3 +9,9 @@ def predict(model, input_df):
     predictions_df=predict_model(estimator=model,data=input_df)
     predictions=predictions_df['Label'][0]
     return predictions
+
+def run():
+    add_selectbox=st.sidebar.selectbox("How would you like to predict",("Online","Batch"))
+    
+    st.sidebar.info("App Created to Predict Patient Hospital Charges")
+    
