@@ -7,4 +7,3 @@
 2) Building Web App using Streamlit.<br>
 3) Deploying the Web App on Heroku.<br>
 <br>
-<b>Installation:</b>
